@@ -1,0 +1,220 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:wght@100;200;300;400&family=Sedgwick+Ave+Display&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Box-sizing for all elements inside .services */
+.services *, .services *::before, .services *::after {
+  box-sizing: border-box;
+}
+
+/* Base font styles and background */
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EDE7E3;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Code font styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Root variables for easy theme management */
+:root {
+  --primary-color: #112541;
+  --secondary-color: #FF758F;
+  --accent-color: #FFD2D3;
+  --third-color: #FEF6EB;
+  --background-color: #EDE7E3;
+  --font-family-main: 'Montserrat', sans-serif;
+  --font-family-special: 'Sedgwick Ave Display', cursive;
+}
+
+/* Heading and paragraph font styling */
+h1, h2, h3, h4, h5, h6, p, label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Specific heading styles */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+h4{
+  font-size: 2.5rem;
+}
+
+/* Special font for EllaTech class */
+.ellaTech {
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: #FF758F;
+}
+
+/* Label font styling */
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+span {
+font-family: 'Montserrat', sans-serif;
+color:#FEF6EB ;
+font-size: 1rem;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: #4C5270;
+  font-weight: bold;
+}
+
+/* Form styling */
+.form1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Responsive font sizes */
+html {
+  font-size: 16px; /* This sets the default font size */
+}
+
+/* Responsive font sizes */
+h1 {
+	font-size: 2.5rem; /* 40px if the default size is 16px */
+  }
+  
+  h2 {
+	font-size: 2.1875rem; /* 35px if the default size is 16px */
+  font-weight: bold;
+  }
+  
+  h3 {
+	font-size: 1.875rem; /* 30px if the default size is 16px */
+  }
+  
+  /* You can continue this pattern for other headings */
+  h4 {
+	font-size: 1.5rem; /* 24px if the default size is 16px */
+  }
+  
+  h5 {
+	font-size: 1.25rem; /* 20px if the default size is 16px */
+  }
+  
+  h6 {
+	font-size: 1rem; /* 16px if the default size is 16px */
+  }
+  
+  /* Paragraphs typically don't need to be as large as headings */
+  p {
+    font-size: 1rem; /* 16px if the default size is 16px */
+    line-height: 1.4; /* A balanced line-height for readability */
+  }
+  
+  
+  /* Labels might be smaller than normal text */
+  
+
+/* Link hover effects */
+a:hover {
+  color: #36527C; /* Darkened primary color for hover effect */
+}
+
+/* Global button styles */
+button {
+  font-family: var(--font-family-main);
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:focus {
+  outline: none; /* Removes the default outline */
+  box-shadow: 0 0 0 3px rgba(76, 82, 112, 0.5); /* Custom focus style */
+  /* or use a border if it fits your design better */
+  /* border: 2px solid #4C5270; */
+}
+
+
+
+/* Focus styles for accessibility */
+a:focus{
+  outline: 3px solid rgba(76, 82, 112, 0.5); /* Focus state visibility */
+}
+
+/* Global widths and max-widths for content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 820px) {
+h1 {
+    font-size: 5rem;
+  }
+h2 {
+    font-size: 1.5rem;
+  }
+h3 {
+    font-size: 1.35rem;
+  }
+h4 {
+    font-size: 1.25rem;
+  }
+p{
+		font-size:1.125rem;
+		}
+	}
+  
+  /* For standard desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .h1 {
+      font-size: 7rem;
+    }
+    .h2 {
+      font-size: 1.75rem;
+    }
+    .h3 {
+      font-size: 1.5rem;
+    }
+    .h4 {
+      font-size: 1.4rem;
+    }
+    .p {
+      font-size: 1.25rem; /* even larger for desktop screens */
+      line-height: 1.5; /* Slightly larger line-height for better readability */
+    }
+  }
