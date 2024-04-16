@@ -4,87 +4,104 @@
    display: flex;
    flex-direction: column;
     justify-content: center;
-    background-color: white;
-}
+    background-color:#EDE7E3;
 
+}
+.featuredContainers{
+    padding: 2rem;
+}
+.bootcamp{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: solid 0.3rem #1d3d6b;
+}
+.borderBottom{
+    border-bottom: solid 0.3rem #1d3d6b;
+    margin-bottom: 1.3rem;
+
+}
+.projects h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+.projects h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 .projects h3{
-    font-size: 30px;
+    font-size: 1rem;
     
 }
-
+.projects h4{
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    
+}
+.projects h5{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    
+}
 .tags{
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+   
   
 }
 .tags p{
-    font-size: 15px;
-    color: white;
-    background-color: #000000;
-    margin: 4px;
-    padding: 2px 6px;
+    font-size: 0.7rem;
+    color: var(--third-color);
+    background-color:var(--tag-color);
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+    border-radius: 8px;
 }
-.featuredContainers{
+.featuredText{
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-padding: 10px;
+border: 0.1rem solid #FEF6EB;
+padding: 1rem;
+margin-bottom: 2rem;
 }
 
-.featuredContainers img{
-    width: 100%;
-    padding: 5px;
-    padding-bottom: 10px;
-}
 
 .linksproject{
 
 display: flex;
-margin-bottom: 10px;
+margin-bottom: 2rem;
+gap: 1rem;
 
 
 }
-.gitbtn{
-    display: flex;
+.gitbtn, .livebtn {
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    background-color: #F5F5F5;
-    color: black;
-    border-radius: 40px;
-    width: 164px;
-    height: 48px; 
+    background-color: var(--secondary-color); /* Adjust the variable as needed */
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
     border: none;
-
+    color: var(--third-color);
+    font-size: 0.7rem;
+}
+.gitbtn p{
+  color: var(--primary-color);
+  font-size: 0.7rem;
 }
 
-.gitbtn img{
-    margin-right: 10px;
-    width: 32px;
-    height: 32px;
-}
-.gitbtn span{
-    display: inline-block;
-}
-.livebtn{
-    display: flex;
-    align-items: center;
-    background-color: #F5F5F5;
-    color: black;
-    border-radius: 40px;
-    width: 164px;
-    height: 48px; 
-    border: none;
-   
-}
+
 .livebtn p{
-    font-size: 20px;
+    font-size: 0.7rem;
+    color: var(--third-color); /* Text color, assuming you want it to be white */
 }
-.livebtn img {
-    margin-right: 10px;
-    width: 32px;
-    height: 32px;
-}
-.livebtn span{
-    display: inline;
-}
+
 
 
 

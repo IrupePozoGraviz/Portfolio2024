@@ -8,17 +8,6 @@ background-color: var(--third-color);
 
 }
 
-
-.logo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo img{
-    width: 80%;
-}
 .profileImage {
     display: flex;
     justify-content: center;
@@ -26,9 +15,10 @@ background-color: var(--third-color);
     padding: 3rem;
   }
   
-  .image {
-    width: 60%; /* Sätt bredden till 60% av dess container */
+.profileImage img {
+    width: 50%; /* Sätt bredden till 60% av dess container */
     height: auto; /* Låt höjden anpassa sig proportionellt till bredden */
+    border-radius: 30%;
   }
   
 
@@ -68,29 +58,25 @@ line-height: 29px;
     display: flex;
     flex-direction: row;
     justify-content: center;
- 
+    gap: 1rem;
     margin:20px;
     padding-bottom: 20px;
 }
-.iconsgithub{
-    width: 32px;
-    width: 32px;
+.iconsGithub{
     order: 1;
 }
-.iconsgithub img{
-width: 23.25px;
-height: 22.7px;
+.iconsGithub img{
+width: 100%;
+height: auto;
 }
 
-.iconslinkedin{
-    width: 32px;
-    width: 32px;
+.iconsLinkedin{
     order: 2;
   
 }
-.iconslinkedin img{
-    width: 23.25px;
-    height: 22.7px;
+.iconsLinkedin img{
+    width: 100%;
+    height: auto;
 }
 
 
