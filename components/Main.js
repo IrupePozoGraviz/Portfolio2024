@@ -1,13 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link'
+
 import styles from '@/styles/header.module.css'; // Adjust the import path as necessary
 
 export const Main = () => {
   return (
     <main className={styles.mainContainer}>
+      
       <div className={styles.desktop}>
-        <section className={styles.profileImage}>
+  <section className={styles.profileImage}>
   <Image 
     src="/assets/Irupe.jpeg" 
     alt="Irupé" 
@@ -19,9 +21,7 @@ export const Main = () => {
           <div className={styles.profileContainer}>
             <h1 className={styles.profileH1}>Irupé Pozo Graviz</h1>
             <h2 className={styles.profileH2}>Web developer</h2>
-          </div>
-      </div>
-      <div className={styles.profileInfo}>
+
         <p>
        As a web developer, I don't just code—I infuse projects with accessibility and diversity,
         ensuring that all users feel valued! With a focus on web accessibility,
@@ -33,13 +33,13 @@ export const Main = () => {
          Hire me as a consultat or as a member of your team.
         </p>
       </div>
-
+      </div>
       <div className={styles.icons}>
         <div className={styles.iconsGithub}>
           <Link href="https://github.com/IrupePozoGraviz"
           target="_blank" rel="noopener noreferrer">
             {/* Updated to use next/image */}
-            <Image src="/assets/blackgithubicon.svg" alt="GitHub" width={40} height={40} />
+            <Image src="/assets/blackGithub.svg" alt="GitHub" width={40} height={40} />
           </Link>
         </div>
 
@@ -50,6 +50,7 @@ export const Main = () => {
             <Image src="/assets/blacklinkedinicon.svg" alt="LinkedIn" width={40} height={40} />
           </Link>
         </div>
+
       </div>
     </main>
   );

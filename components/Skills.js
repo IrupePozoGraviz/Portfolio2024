@@ -3,11 +3,12 @@ import styles from  '@/styles/skillscss.module.css'
 const Skills = () => {
   return (
     <main className={styles.mainSkills}>
-    <section className={styles.skills}>
-
-      <h1>
+         <h1>
     Skills
       </h1>
+    <section className={styles.skills}>
+
+   
       <dl className={styles.code}>
         <dt className={styles.dt}>Code</dt>
         <dd className={styles.dd}>Next.js</dd>

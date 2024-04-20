@@ -7,9 +7,11 @@ export const Projects = () => {
   return (
 
     <section className={styles.projects}>
+      <div className={styles.borderBottom}></div>
+       <h1>My projects</h1>
+
            <div className={styles.featuredContainers}>
-     <h1>My projects</h1>
-     <div className={styles.borderBottom}></div>
+    
      
      <article className={styles.featuredText}>
 
@@ -80,18 +82,19 @@ Ensured the landing page adhered to web accessibility standards.
 <div className={styles.linksproject}>
 
   <div className={styles.livebtn}>
-    <Link href="https://separationscoachen.se/">
-      <p>View the page</p>
-    </Link>
+  <h4>Link to project will come soon</h4>
     </div>
 
 </div>
 </article>
+</div>
+
     <div className={styles.bootcamp}>  </div> 
-      
+    <div className={styles.bootcamoProjects}>
       <h2>Bootcamp Projects</h2>
-  
- 
+     
+    </div>
+    <div className={styles.featuredContainers}>
     {/* TeQueenMatch*/}
         <article className={styles.featuredText}>
 

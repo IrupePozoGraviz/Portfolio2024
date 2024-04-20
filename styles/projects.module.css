@@ -101,70 +101,47 @@ gap: 1rem;
     font-size: 0.7rem;
     color: var(--third-color); /* Text color, assuming you want it to be white */
 }
-
-
-
-
-@media(min-width: 740px) and (max-width: 1024px){
-.projects{
- grid-column: 1/2;
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- padding-top: 50px;
- padding-bottom: 50px;
-
+.bootcamoProjects{
+    text-align: center;
 }
 
-.projects h2{
-    grid-column: 1/2;
-}
-
+/* Styles for smaller tablets */
+@media (min-width: 768px) and (max-width: 819px) {
 .featuredContainers{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin: 0 5px 70px 5px;
-padding-bottom: 5px;
-
-}
-
-.featuredContainers{
-    width: 100%;
-    height: 280px; 
-}
-
-.featured-text{
-  margin: 10px 25px;;
-}
-
-.linksproject{
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0;
-
-}
-
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+    }
+    }
     
-  
+    /* Styles for desktop */
+    @media (min-width: 820px) {
+       
+        .featuredContainers{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+    
+    }
+    
+    /* Styles for large desktops */
+    @media (min-width: 1024px) {
+     
+        .featuredContainers{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+    }
+    
+    /* Styles for large desktops */
+    @media (min-width: 1200px) {
+        .featuredContainers{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+    }
 
-}
-   
-@media(min-width: 1025px) {
-
-.projects{
-    display: flex;
-    align-items: center;
-
-}
-
-.featuredContainers{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-
-}
-}
 

@@ -5,8 +5,10 @@
    flex-direction: column;
 justify-content: center;
 background-color: var(--third-color);
+border-bottom: solid 0.3rem #1d3d6b;
 
 }
+
 
 .profileImage {
     display: flex;
@@ -28,6 +30,8 @@ background-color: var(--third-color);
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    padding: 1rem;
+color: var(--primary-color)
 
 }
 .profileH1{
@@ -39,7 +43,7 @@ background-color: var(--third-color);
     color: var(--primary-color)
 }
 
-.profileInfo{
+/*.profileInfo{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -47,8 +51,8 @@ flex-direction: column;
 text-align: center;
 padding: 1rem;
 color: var(--primary-color)
-}
-.profileInfo p{
+}*/
+.profileContainer p{
 
 line-height: 29px;
 
@@ -80,103 +84,52 @@ height: auto;
 }
 
 
-/*tablet*/
-@media(min-width: 740px) and (max-width: 1024px){
-
-.logo{
-  background-color: #FCEDEA;
-}
-.logo img{
-	width: 100%;
-}
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-
+/* Styles for smaller tablets */
+@media (min-width: 768px) and (max-width: 819px) {
+    .featuredContainers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
         }
-
-   .profile-image{
-    display: flex;
-    flex-direction: row;
-     padding-top: 100px;
- }   
-.profile-image img{
-    width: 160px;
-    height: 170px;
-      }
-      
-.profile-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 40px;
-}
-.iprofile-container h1{
-        color: #0b24f4;
-        font-size: 28px;
+        }
+        
+        /* Styles for desktop */
+        @media (min-width: 820px) {
+           
+            .featuredContainers{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        
+        }
+        
+        /* Styles for large desktops */
+        @media (min-width: 1024px) {
+         
+           .desktop{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            .profileContainer{
+                margin-top: 3rem;
+            }
+            .profileImage img {
+                width: 70%; /* Sätt bredden till 60% av dess container */
+                height: auto; /* Låt höjden anpassa sig proportionellt till bredden */
+                border-radius: 30%;
+              }
+        }
+        
+        /* Styles for large desktops */
+        @media (min-width: 1200px) {
+            .featuredContainers{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 2rem;
+            }
         }
     
-.profile-container h2{
-        color: black;
-        font-size: 32px;
-        }
-
-       
-.profile-info{
-    margin: 20px;
-    padding: 40px;
     
     
-    } 
-    }
-
-   
-  /*desktop*/ 
-@media(min-width: 1025px) {
-   
-.desktop{
-   
-display: flex;
-flex-direction: row;
-width: 100%;
-padding-top: 40px;
-}
-
-.logo{
-	display: inline-block;
-	width: 100%;
-	
-order: 1;
-}
-
-.logo img{
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-.profile-image{
-    padding-top: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.profile-image img{
-	width: 300px;
-	height: 300px;
-}
-.profile-container{
-     display: grid;
- grid-column: 1/2;
-   align-content: center;
-   padding-left: 10px;
-}
-
-.profile-info{
-    margin: 20px;
-    padding: 40px;
-    
-    } 
-   
-
-}
