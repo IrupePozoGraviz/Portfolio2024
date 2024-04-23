@@ -11,19 +11,19 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={style.ContactForm}>
+    <form onSubmit={handleSubmit} className={style.ContactForm} aria-label="Contact Form">
       <h3>Hey let's connect</h3>
       <div className={style.email}>
-      <label htmlFor="email">Email Address</label>
-      <input id="email" type="email" name="email" />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <label htmlFor="email">Email Address</label>
+        <input id="email" type="email" name="email" aria-required="true" />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
       <div className={style.message}>
-      <label htmlFor="message" >Let's connect</label>
-      <textarea id="message" name="message" />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
+        <label htmlFor="message">Message</label>
+        <textarea id="message" name="message" aria-required="true"></textarea>
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
       </div>
-      <button className={styles.ContactButton} type="submit" disabled={state.submitting}>
+      <button className={styles.ContactButton} type="submit" disabled={state.submitting} aria-disabled={state.submitting}>
         Submit
       </button>
       <ValidationError errors={state.errors} />

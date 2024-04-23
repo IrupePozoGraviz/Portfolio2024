@@ -1,4 +1,3 @@
-
 import Main from '../components/Main';
 import Skills from '../components/Skills';
 import Projects from '@/components/Projects';
@@ -8,17 +7,14 @@ import styles from '@/styles/landningssida.module.css'
 
 const HomePage = () => {
   return (
-<>
-<main className={styles.landningssida}>
+    <>
+      <main className={styles.landningssida} role="main">
         <Main />
         <Skills />
         <Projects />
       </main>
       <Footer />
-   
-      </>
-      
- 
+    </>
   );
 };
 
